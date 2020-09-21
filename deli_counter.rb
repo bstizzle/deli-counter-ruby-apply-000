@@ -1,6 +1,7 @@
 # Write your code here.
 
 bens_deli = []
+COUNTER = 1
 
 def line(bens_deli)
   counter = 1
@@ -17,10 +18,16 @@ def line(bens_deli)
   end 
 end 
 
-def take_a_number(bens_deli, name)
-  #add name to end of list, print name and number
-  bens_deli << name
-  puts "Welcome, #{name}. You are number #{bens_deli.length} in line."
+# def take_a_number(bens_deli, name)
+#   #add name to end of list, print name and number
+#   bens_deli << name
+#   puts "Welcome, #{name}. You are number #{bens_deli.length} in line."
+# end 
+
+def take_a_number(bens_deli)
+  bens_deli << COUNTER 
+  puts "You're number #{COUNTER}."
+  COUNTER += 1
 end 
 
 def now_serving(bens_deli)
